@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  node:
+    build: ./../core
+    image: teqla/core:dev
+    command: ["bash", "-lc", "cargo run"]
+    networks: [ teqla ]
+  indexer:
+    image: node:20
+    working_dir: /app
+    volumes:
+      - ../sdk:/app
+    command: ["bash", "-lc", "node -e \"console.log('indexer placeholder')\""]
+    networks: [ teqla ]
+
+networks:
+  teqla: {}

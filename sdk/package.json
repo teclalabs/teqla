@@ -1,0 +1,14 @@
+{
+  "name": "teqla-sdk",
+  "version": "0.1.0",
+  "description": "SDK for interacting with the TEQLA blockchain",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "echo \"(add eslint later)\"",
+    "test": "node -e \"console.log('no tests yet')\""
+  },
+  "license": "MIT"
+}
